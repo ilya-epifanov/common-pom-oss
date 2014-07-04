@@ -6,7 +6,10 @@
   <version>1.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Common OSS pom for github.com/hajile projects</name>
+  <name>common oss pom</name>
+  <description>
+    Common OSS pom for github.com/hajile projects
+  </description>
   <url>https://github.com/hajile/common-pom-oss</url>
   <licenses>
     <license>
