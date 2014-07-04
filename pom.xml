@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.hajile.common-pom-oss</groupId>
   <artifactId>common-pom-oss</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
 
   <name>common oss pom</name>
@@ -28,7 +28,7 @@
     <connection>scm:git:file:</connection>
     <developerConnection>scm:git:ssh://git@github.com/hajile/common-pom-oss.git</developerConnection>
     <url>https://github.com/hajile/common-pom-oss</url>
-    <tag>HEAD</tag>
+    <tag>v1.2</tag>
   </scm>
 
   <build>
