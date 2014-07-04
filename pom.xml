@@ -105,7 +105,7 @@
           <version>2.5</version>
           <configuration>
             <autoVersionSubmodules>true</autoVersionSubmodules>
-            <tagNameFormat>@{project.version}</tagNameFormat>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
             <scmCommentPrefix>[release]</scmCommentPrefix>
             <pushChanges>false</pushChanges>
             <localCheckout>true</localCheckout>
