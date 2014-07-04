@@ -6,6 +6,21 @@
   <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <name>Common OSS pom for github.com/hajile projects</name>
+  <url>https://github.com/hajile/common-pom-oss</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>https://raw.githubusercontent.com/hajile/common-pom-oss/master/LICENSE</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Ilya Epifanov</name>
+      <email>elijah.epifanov@gmail.com</email>
+    </developer>
+  </developers>
+
   <scm>
     <connection>scm:git:file:</connection>
     <developerConnection>scm:git:ssh://git@github.com/hajile/common-pom-oss.git</developerConnection>
@@ -112,6 +127,19 @@
           </configuration>
         </plugin>
         <plugin>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>1.5</version>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <artifactId>maven-source-plugin</artifactId>
           <version>2.2.1</version>
           <executions>
@@ -160,6 +188,18 @@
                 <requirePluginVersions />
               </rules>
             </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
